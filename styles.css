@@ -1,0 +1,69 @@
+/** variables  */
+:root{
+    font-size: 16px;
+}
+
+/** properties */
+div{
+    border: 0.25rem solid blue;
+}
+
+/** layout */
+.dashboard-container{
+    height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: minmax(100px,1fr) minmax(100px, 5fr);
+}
+
+.sidebar-column{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-column{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content-container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.articles-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+}
+
+.content-title{
+    grid-column: 1/3;
+}
+
+.info-sidebar-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px 1fr;
+}
+
+ul{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: left; */
+    /* margin: 0; */
+    padding: 0;
+    padding-left: 1rem;
+}
+
+ul div{
+    /* width: auto; */
+    max-width: fit-content;
+}
